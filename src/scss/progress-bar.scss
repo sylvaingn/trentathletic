@@ -1,0 +1,46 @@
+.right-goals {
+	width: 50%;
+	max-width: 500px;
+
+	.single-goal {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0.5em 0;
+
+		.icon {
+			height: 20px;
+			width: 20px;
+			//margin-right: 1em;
+		}
+
+		.bar, .progress {
+			border-radius: 20px;
+
+		}
+
+		.bar {
+			height: 3px;
+			width: calc(100% - 50px);
+			overflow: hidden;
+			position: relative;
+
+			.progress {
+				background: $orange;
+				transition: all 0.8s ease-in-out;
+			}
+
+			&::before {
+				content: '';
+				z-index: -1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background: rgba(255, 255, 255, 0.5);
+				filter: blur(3px);
+			}
+		}
+	}
+}

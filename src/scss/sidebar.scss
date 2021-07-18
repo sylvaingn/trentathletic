@@ -1,0 +1,33 @@
+.navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 2em 0;
+	width: $nav-width;
+	height: 100vh;
+	border-radius: 0 20px 20px 0;
+
+	a {
+		li {
+			margin-bottom: 2em;
+			padding: 0.3em;
+			overflow: hidden;
+			transition: all 0.5s ease-in-out;
+			border-radius: 10px;
+
+			img {
+				height: 20px;
+				width: auto;
+				object-position: center center;
+			}
+		}
+
+		&.is-active {
+			li {
+				background: $active-color;
+			}
+		}
+	}
+
+}
