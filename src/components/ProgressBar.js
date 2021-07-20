@@ -1,7 +1,7 @@
 import React from 'react';
 
 let user_info = [
-    {'kilometers': '9', 'calories': '1000', 'time': '40'}
+    {'kilometres': '9', 'calories': '1000', 'minutes': '40'}
 ];
 
 class ProgressBar extends React.Component {
@@ -10,10 +10,10 @@ class ProgressBar extends React.Component {
 
         switch (this.props.type) {
             case 'minutes':
-                info = user_info[0].time;
+                info = user_info[0].minutes;
                 break;
             case 'kilometres':
-                info = user_info[0].kilometers;
+                info = user_info[0].kilometres;
                 break;
             case 'calories':
                 info = user_info[0].calories;
