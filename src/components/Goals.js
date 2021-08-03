@@ -12,7 +12,6 @@ class Goals extends React.Component {
     render() {
         if (goals.length > 0) {
             return goals.map((goal, i) => {
-                console.log(i);
                 return [
                     <ProgressBar key={goal} quantity={goal.quantity} type={goal.type} frequency={goal.frequency}/>]
             })

@@ -2,7 +2,7 @@
 	width: 50%;
 	max-width: 500px;
 
-	.single-goal {
+	.info-goal {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -41,6 +41,23 @@
 				background: rgba(255, 255, 255, 0.5);
 				filter: blur(3px);
 			}
+		}
+	}
+
+	.message {
+		overflow: hidden;
+		padding-top: -2em;
+		top: 0;
+		transition: all 0.3s ease-in-out;
+
+		&.success {
+			height: max-content;
+		}
+	}
+
+	&:hover {
+		.message {
+			padding-top: 0;
 		}
 	}
 }
