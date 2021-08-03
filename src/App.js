@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import HomePage from './pages/HomePage';
 import GoalsPage from './pages/GoalsPage';
-import Stats from './pages/StatPage';
+import StatsPage from './pages/StatPage';
 import Header from './components/Header';
 import Goals from "./components/Goals";
 import './App.css';
@@ -21,11 +21,13 @@ function App() {
                             <Goals/>
                         </div>
                     </header>
-                    <Switch>
-                        <Route exact path='/' component={HomePage}/>
-                        <Route exact path='/objectifs' component={GoalsPage}/>
-                        <Route exact path='/stats' component={Stats}/>
-                    </Switch>
+                    <div className="container-box blur">
+                        <Switch>
+                            <Route exact path='/' component={HomePage}/>
+                            <Route exact path='/objectifs' component={GoalsPage}/>
+                            <Route exact path='/stats' component={StatsPage}/>
+                        </Switch>
+                    </div>
                 </main>
             </div>
         </Router>

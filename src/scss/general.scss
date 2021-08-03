@@ -1,6 +1,20 @@
+@font-face {
+	font-family: 'IntegralCF';
+	src: url('/font/integralcf-regular-webfont.woff2') format('woff2'),
+	url('/font/integralcf-regular-webfont.woff') format('woff'),
+	url('/font/integralcf-regular-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	font-size: 16px;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'IntegralCF', sans-serif;
 }
 
 * {
@@ -55,7 +69,16 @@ ul {
 			align-items: center;
 
 			.left-hello {
+				text-transform: uppercase;
 
+				#random-sentence {
+					@include font-size($hello);
+					color: $orange;
+				}
+
+				#name {
+					@include font-size($name);
+				}
 			}
 		}
 	}
@@ -68,6 +91,6 @@ ul {
 		left: 0;
 		height: 100vh;
 		width: 100vw;
-		background: url("/img/background.svg") center / 110% no-repeat;
+		background: url(/img/background.svg) center / 110% no-repeat;
 	}
 }

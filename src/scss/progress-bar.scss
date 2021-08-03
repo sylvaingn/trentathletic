@@ -1,3 +1,5 @@
+$goal-size: 0.875rem;
+
 .right-goals {
 	width: 50%;
 	max-width: 500px;
@@ -46,18 +48,19 @@
 
 	.message {
 		overflow: hidden;
-		padding-top: -2em;
+		text-align: right;
+		opacity: 0;
 		top: 0;
 		transition: all 0.3s ease-in-out;
 
 		&.success {
-			height: max-content;
+			opacity: 1;
 		}
 	}
 
 	&:hover {
 		.message {
-			padding-top: 0;
+			opacity: 1;
 		}
 	}
 }
