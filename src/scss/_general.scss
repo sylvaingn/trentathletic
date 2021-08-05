@@ -63,10 +63,11 @@ ul {
 	main {
 		width: calc(100% - #{$nav-width});
 
-		header {
+		.header-obj {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin-bottom: 2em;
 
 			.left-hello {
 				text-transform: uppercase;

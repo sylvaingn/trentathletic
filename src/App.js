@@ -12,8 +12,8 @@ function App() {
             <div className="app">
                 <Header/>
                 <main className="container">
-                    <header>
-                        <div className="left-hello">
+                    <header className={'header-obj'}>
+                        <div className="left-hello container">
                             <h1><span id={'random-sentence'}>Heureux de te revoir</span> <span id='name'>Sylvain</span>
                             </h1>
                         </div>
@@ -21,7 +21,7 @@ function App() {
                             <Goals/>
                         </div>
                     </header>
-                    <div className="container-box blur">
+                    <div className="container blur">
                         <Switch>
                             <Route exact path='/' component={HomePage}/>
                             <Route exact path='/objectifs' component={GoalsPage}/>

@@ -1,0 +1,25 @@
+.header-calendar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.add {
+		cursor: pointer;
+		transform-origin: center;
+		transition: all 0.5s ease-in-out;
+
+		&.open {
+			transform: rotate(45deg);
+		}
+	}
+}
+
+select {
+	appearance: none;
+}
+
+.add-event {
+	select {
+		color: black;
+	}
+}
