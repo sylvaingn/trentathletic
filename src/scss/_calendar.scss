@@ -18,8 +18,29 @@ select {
 	appearance: none;
 }
 
-.add-event {
-	select {
-		color: black;
+
+.add-event form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	.selects {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		select {
+			width: calc(100% / 3);
+			max-width: 300px;
+			background: rgba(255, 255, 255, 0.2);
+		}
+	}
+
+	button {
+		margin-top: 2em;
+		width: max-content;
+		background: $orange;
 	}
 }
+

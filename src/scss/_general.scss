@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 @font-face {
 	font-family: 'IntegralCF';
 	src: url('/font/integralcf-regular-webfont.woff2') format('woff2'),
@@ -56,6 +58,29 @@ ul {
 	}
 }
 
+select, button {
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	padding: 0.5em 1em;
+	border-radius: 25px;
+	border: none;
+}
+
+select {
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		height: 20px;
+		width: 20px;
+		background: url(../img/chevron_down.svg) center / contain no-repeat;
+	}
+}
+
 .app {
 	position: relative;
 	display: flex;
@@ -92,6 +117,6 @@ ul {
 		left: 0;
 		height: 100vh;
 		width: 100vw;
-		background: url(/img/background.svg) center / 110% no-repeat;
+		background: url(/img/background.svg) center / cover no-repeat;
 	}
 }
